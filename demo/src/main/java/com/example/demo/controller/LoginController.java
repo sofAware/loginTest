@@ -12,8 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 @RequiredArgsConstructor
 public class LoginController {
 
-    @Autowired
-    UserService userService;
+    private final UserService userService;
 
     @GetMapping("/signup")
     public String signup() {

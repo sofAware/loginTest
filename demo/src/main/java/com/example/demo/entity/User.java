@@ -5,7 +5,6 @@ import lombok.*;
 import javax.persistence.*;
 
 @Getter
-@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
@@ -23,7 +22,6 @@ public class User {
     @Column
     private String password;
 
-    @Column
     @Enumerated(EnumType.STRING)
     private UserRole role;
 }

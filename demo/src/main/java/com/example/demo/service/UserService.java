@@ -12,7 +12,7 @@ import javax.transaction.Transactional;
 @RequiredArgsConstructor
 public class UserService {
 
-    public UserRepository userRepository;
+    public final UserRepository userRepository;
 
     @Transactional
     public Long save(UserSaveRequestDto requestDto) {
